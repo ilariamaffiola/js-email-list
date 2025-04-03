@@ -11,7 +11,9 @@ li{
 }
 .email-container{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 li:nth-child(2n+1){
     background-color: #FFC5C5;
@@ -21,5 +23,10 @@ li:nth-child(2n){
 }
 h1{
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
+
+}
+.btn{
+    text-align: center;
+    margin-top: 25px;
 }
