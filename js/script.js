@@ -17,13 +17,19 @@
     
 // });
 let emails = document.getElementById('emails');
+let button = document.getElementById('button');
+
 for(let i=0; i<10;i++){
-axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((resp)=>{
-    console.log(resp.data.response);
-    let email = resp.data.response;
-    const li = document.createElement('li');
-    //console.log(li);
-    li.append(email);
-    emails.appendChild(li);
-});
+    axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((resp)=>{
+        console.log(resp.data.response);
+        let email = resp.data.response;
+        const li = document.createElement('li');
+        //console.log(li);
+        li.append(email);
+        emails.appendChild(li);
+    });
 };
+button.addEventListener('click', function(){
+    console.log(emails);
+    
+});
