@@ -1,0 +1,18 @@
+ul li{
+    list-style-type: none;
+}
+li{
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px 35px;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+li:nth-child(2n+1){
+    background-color: #FFC5C5;
+}
+li:nth-child(2n){
+    background-color: #87CEEB;
+}
